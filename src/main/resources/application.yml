@@ -1,0 +1,12 @@
+services:
+  getProductName:
+    url: https://redsky.target.com/v2/pdp/tcin/{productId}
+  getProductPrice:
+    url: https://price.myRetail.com/product/{productId}/price
+
+
+config:
+  excludes: "taxonomy,price,promotion,bulk_ship,rating_and_review_reviews,rating_and_review_statistics,question_answer_statistics"
+
+server:
+  port: 8297
